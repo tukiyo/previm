@@ -139,6 +139,8 @@ function! s:t.default_content_if_not_exists_setting()
   call self.assert.equals([
         \ "@import url('origin.css');",
         \ "@import url('lib/github.css');",
+        \ "@import url('lib/qiita.css');",
+        \ "@import url('lib/qiita_old.css');",
         \ ], actual)
 endfunction
 
@@ -149,6 +151,8 @@ function! s:t.default_content_if_invalid_setting()
   call self.assert.equals([
         \ "@import url('origin.css');",
         \ "@import url('lib/github.css');",
+        \ "@import url('lib/qiita.css');",
+        \ "@import url('lib/qiita_old.css');",
         \ ], actual)
 endfunction
 
